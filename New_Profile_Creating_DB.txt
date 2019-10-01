@@ -1,0 +1,29 @@
+
+select * from mypm_user_account where user_ein=612964165;
+
+desc mypm_user_account;
+
+INSERT INTO mypm_user_account (USER_ID, USER_EIN, USER_STATUS,HAS_ASSIGNABLE_ID,PREFERRED_PROFILE_TYPE,PROFILE_NOTIFICATION)
+VALUES (5061, 612964165, 'ACTIVE','Y','ENTERPRISE',0);
+
+select * from mysd_users where ein=612964165;
+
+
+select * from USER_PROFILE_MAPPING;
+
+select * from USER_PROFILE_MAPPING where user_id=5061;
+
+
+INSERT INTO USER_PROFILE_MAPPING (MAPPING_ID, USER_ID,PROFILE_ID)
+VALUES (1527, 5061, 3);
+
+desc USER_PROFILE_MAPPING;
+
+select * from USER_PROFILE_MAPPING where user_id=5061;
+
+select * from MYPM_PROFILES where PROFILE_ID=3;
+
+
+1, 3, 5
+
+
